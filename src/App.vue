@@ -89,13 +89,17 @@ body *{
 .input{
   margin-bottom: 40px;
   position: relative;
-  &.error::after{
+  &.error{
+      &::after{
     content: "ⓧ Сheck that the input is correct";
     position: absolute;
     color:#D60000;
     bottom:-20px;
-    left: 0;
-
+    left: 0;     
+  }
+  input{
+        border-color:#D60000;
+  }
   }
 }
 label{
